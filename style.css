@@ -21,6 +21,7 @@
   --black-transparent: 0, 0, 0;
   --white-transparent: 255, 255, 255;
   --grey-color: 192, 192, 192;
+  --bg-image: url(./img/bdimw.png);
 }
 
 [data-theme="dark"] {
@@ -46,6 +47,7 @@
   --black-transparent: 255, 255, 255;
   --white-transparent: 0, 0, 0;
   --grey-color: 102, 102, 102;
+  --bg-image: url(./img/bdimb.png);
 }
 
 * {
@@ -58,6 +60,7 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
 	scroll-behavior: smooth;
   background-color: var(--body-color);
+  background-image: var(--bg-image);
 }
 
 section {
@@ -273,7 +276,7 @@ header {
 .short-hr {
 	width: 20%;
     height: 3px;
-    background-color: var(--primary-color);
+    background-color: var(--blueone-blueone);
     border: 2px;
     text-align: left;
     margin: 0;
@@ -316,7 +319,7 @@ margin-left: 0;
 	background: var(--light-dark);
 	margin-bottom: 30px;
 	text-align: center;
-	color: var(--primary-color);
+	color: var(--blueone-blueone);
 	border-radius: 12px;
 	height: 100%;
 }
@@ -387,6 +390,7 @@ footer {
 
 .bg-small-gr {
   padding: 0 !important;
+  border: 1px solid rgba(var(--grey-color), 0.5);
 }
 
 .bg-small-gr:hover {
@@ -403,6 +407,7 @@ footer {
 .flex-child-64 h3 {
 	font-weight: 700;
 	font-size: 27px;
+  margin: 5px 0 0;
   color: var(--textdark-grey);
 }
 
@@ -634,10 +639,24 @@ form > div:nth-child(3){
     }
     
     svg{
-      fill: var(--light-dark);
+      fill: var(--white-dark);
     }
-
+    .flex-child-64 p, .message-box > p {
+      line-height: 1.6;
+    }
+    .cd-spacer:nth-of-type(1){
+      display: none;
+    }
+    .cd-spacer:nth-of-type(2){
+      display: block;
+    }
 @media screen and (max-width: 710px) {
+  .cd-spacer:nth-of-type(1){
+    display: block;
+  }
+  .cd-spacer:nth-of-type(2){
+    display: none;
+  }
   .social-icons a:before {
     width: 2rem;
     height: 2rem;
@@ -674,7 +693,9 @@ form > div:nth-child(3){
 		width: 100%;
 		max-width: 100%;
 	}
-
+  .flex-div {
+    margin: 20px 0;
+  }
 	form .flex-child-2:last-child {
 		padding-top: 20px;
 	}
