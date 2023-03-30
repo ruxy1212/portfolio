@@ -45,7 +45,7 @@ function switchTheme(e) {
 themeMode.addEventListener('click', switchTheme, false);
 
 //submit form
-function formSub(event){
+function formSub(form){
   event.preventDefault();
   var ripple = document.querySelector('form > div:nth-child(3)');
   ripple.classList.toggle('unsee');
@@ -62,7 +62,7 @@ function formSub(event){
         alert('Email received successfully! Thank you.');
         ripple.classList.toggle('unsee');
         Array.from(form.elements).forEach(formElement => formElement.disabled = false);
-        window.location = 'index.html';
+        window.location = '../#home';
       }else{
         alert('An error occured! Please try again');
         ripple.classList.toggle('unsee');
