@@ -45,9 +45,8 @@ function switchTheme(e) {
 themeMode.addEventListener('click', switchTheme, false);
 
 //submit form
-const form = document.querySelector('form');
-form.addEventListener('submit', function(e){
-  e.preventDefault();
+function formSub(event){
+  event.preventDefault();
   var ripple = document.querySelector('form > div:nth-child(3)');
   ripple.classList.toggle('unsee');
   const payload = new FormData(form);
@@ -76,4 +75,4 @@ form.addEventListener('submit', function(e){
     }
   })
   .catch(err => console.log(err));
-});
+}

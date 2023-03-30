@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Russell Oje Portfolio</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link href="ripple.css" rel="stylesheet" type="text/css" />
-	<link href="flaticon.copy.css" rel="stylesheet" type="text/css" />
+	<link href="../css/style.css" rel="stylesheet" type="text/css" />
+	<link href="../css/ripple.css" rel="stylesheet" type="text/css" />
+	<link href="../css/flaticon.copy.css" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="img/rlogo.png"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -16,10 +16,10 @@
 	<header>
 		<div class="topnav" id="topnav">
 		  <a href="index.html#home"><span class="icontainer"><i class="fa fa-fw fa-home"></i></span> Home</a>
-			<a class="floater" href="index.html#about"><span class="icontainer"><i class="fa fa-fw fa-info"></i></span> About</a>
-			<a class="floater" href="index.html#services"><span class="icontainer"><i class="fa fa-fw fa-gears"></i></span> Services</a>
-			<a class="floater" href="index.html#projects"><span class="icontainer"><i class="fa fa-fw fa-calendar-check-o"></i></span> Projects</a>
-			<a class="floater" href="#"><span class="icontainer"><i class="fa fa-fw fa-calendar-check-o"></i></span> Blog</a>
+			<a class="floater" href="../#about"><span class="icontainer"><i class="fa fa-fw fa-info"></i></span> About</a>
+			<a class="floater" href="../#services"><span class="icontainer"><i class="fa fa-fw fa-gears"></i></span> Services</a>
+			<a class="floater" href="../projects"><span class="icontainer"><i class="fa fa-fw fa-calendar-check-o"></i></span> Projects</a>
+			<a class="floater" href="https://medium.com/@prophetr"><span class="icontainer"><i class="fa fa-fw fa-calendar-check-o"></i></span> Blog</a>
 			<a class="floater active" href="#" ><span class="icontainer"><i class="fa fa-fw fa-envelope"></i></span> Contact</a>
 		  <a href="javascript:void(0);" class="icon" onclick="navFunction()">
 		    <i class="fa fa-bars"></i>
@@ -44,6 +44,7 @@
 					<b>HTML</b>
 					<b>CSS</b>
 					<b>JavaScript</b>
+					<b>React</b>
 					<b>PHP</b>
                     <b>Laravel</b>
 				</span>
@@ -76,7 +77,7 @@
     </svg>
 <section id="contact">
 	<div>
-	<form action="https://api.web3forms.com/submit" method="POST">
+	<form action="https://api.web3forms.com/submit" method="POST" onsubmit="formSub();">
 		<div class="flex-div" style="padding: 20px 20px 0;">
 			<div class="flex-child-2">
 				<input type="hidden" name="access_key" value="01c2a484-e61c-43b6-b4df-dc7a2ad32731">
@@ -115,11 +116,11 @@
             <div class="footer-distributed">
                 <div class="footer-left">
                     <p class="footer-links">
-                        <a href="index.html#home">Home</a>
-                        <a href="index.html#about">About</a>
-                        <a href="index.html#services">Services</a>
-                        <a href="index.html#projects">Projects</a>
-						<a href="#">Blog</a>
+                        <a href="../#home">Home</a>
+                        <a href="../#about">About</a>
+                        <a href="../#services">Services</a>
+                        <a href="../projects">Projects</a>
+						<a href="https://medium.com/@prophetr">Blog</a>
                         <a href="#">Contact</a>
                     </p>
                 </div>
@@ -129,9 +130,9 @@
 </footer>
 
 	
-	<script src="script.js"></script>
-	<script src="jquery.copy.js"></script>
-	<script src="headline.copied.js"></script>
+	<script src="../js/script.js"></script>
+	<script src="../js/jquery.copy.js"></script>
+	<script src="../js/headline.copied.js"></script>
 </body>
 
 </html>

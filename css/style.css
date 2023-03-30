@@ -21,7 +21,8 @@
   --black-transparent: 0, 0, 0;
   --white-transparent: 255, 255, 255;
   --grey-color: 192, 192, 192;
-  --bg-image: url(./img/bdimw.png);
+  --grey-darker: 152, 152, 152;
+  --bg-image: url(../img/bdimw.png);
 }
 
 [data-theme="dark"] {
@@ -47,7 +48,7 @@
   --black-transparent: 255, 255, 255;
   --white-transparent: 0, 0, 0;
   --grey-color: 102, 102, 102;
-  --bg-image: url(./img/bdimb.png);
+  --bg-image: url(../img/bdimb.png);
 }
 
 * {
@@ -262,6 +263,15 @@ header {
 /* 	padding: 0 16px; */
 }
 
+.message-box > div{
+  padding: 20px;
+}
+.bgcover{
+  background-size: cover !important;
+}
+.seeprj{
+  margin-left: 20px;
+}
 .message-box p {
 	font-size:16px;
 	color: var(--textdark-light);
@@ -398,6 +408,16 @@ footer {
   cursor: default;
 }
 
+.bg-small-grd {
+  padding: 0 !important;
+  border: 1px solid rgba(var(--grey-darker), 0.5);
+}
+
+.bg-small-grd:hover {
+	background-color: rgb(var(--grey-darker));
+  cursor: default;
+}
+
 .flex-child-46 img {
 	width: 100%;
 	min-height: 100%;
@@ -444,7 +464,7 @@ footer {
     border-color: var(--secondary-color-t);
 }
 #contact {
-    background: url(img/bg.png) no-repeat center center #333333;
+    background: url(../img/bg.png) no-repeat center center #333333;
 	margin: 0;
 	padding: 7%;
 }
@@ -462,7 +482,7 @@ form > div:nth-child(3){
   align-items: center;
 }
 #others {
-    background: url(img/bg.png) no-repeat center center #333333;
+    background: url(../img/bg.png) no-repeat center center #333333;
 	margin: 0;
 	padding: 7%;
 }
