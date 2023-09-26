@@ -227,7 +227,7 @@ header {
 }
 
 #others > div, #contact > div {
-  background-color: rgba(var(--white-transparent),0.3); 
+  background-color: rgba(var(--white-transparent),0.5); 
   padding-bottom: 20px;
 }
 
