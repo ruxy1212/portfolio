@@ -76,3 +76,6 @@ function formSub(form){
   })
   .catch(err => console.log(err));
 }
+
+
+AOS.init({duration: 1000});
