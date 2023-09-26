@@ -238,6 +238,10 @@ header {
 	margin: 20px;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-child-2 {
 	width: 50%;
 	max-width: 50%;
@@ -670,6 +674,13 @@ form > div:nth-child(3){
     .cd-spacer:nth-of-type(2){
       display: block;
     }
+    .text-center{
+      text-align: center;
+    }
+    img{
+      position: relative;
+      z-index: 10;
+    }
 @media screen and (max-width: 710px) {
   .cd-spacer:nth-of-type(1){
     display: block;
@@ -713,6 +724,9 @@ form > div:nth-child(3){
 		width: 100%;
 		max-width: 100%;
 	}
+  .flex-col {
+    flex-direction: column-reverse;
+  }
   .flex-div {
     margin: 20px 0;
   }

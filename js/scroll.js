@@ -8,20 +8,9 @@ window.onload = function (){
   if (window.location.hash === '#projects') {
     goTo(window.location.hash);
   }
-  function goTo(hash){ console.log('aboutoyay');
+  function goTo(hash){
     $([document.documentElement, document.body]).animate({
       scrollTop: $(hash).offset().top
-    }, 0);
-    console.log('yay');
-  }
-  function gotoFaq(){
-    $([document.documentElement, document.body]).animate({
-      scrollTop: $("#faq").offset().top
-    }, 0);
-  }
-  function gotoPlan(){
-    $([document.documentElement, document.body]).animate({
-      scrollTop: $("#gotoplan").offset().top
     }, 0);
   }
 }
@@ -58,9 +47,9 @@ let callback0 = (entries, observer) => {
     });
   }
   let callback3 = (entries, observer) => {
-    entries.forEach(entry => { //alert('project is active00');
-      if (entry.isIntersecting) { //alert('project is active11');
-        navlinks.forEach(navlink => { //alert('project is active');
+    entries.forEach(entry => { 
+      if (entry.isIntersecting) { 
+        navlinks.forEach(navlink => { 
             navlink.classList.remove('active');
         });
         navlinks[3].classList.add('active'); 
